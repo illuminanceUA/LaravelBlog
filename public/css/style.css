@@ -1,0 +1,44 @@
+.posts {
+    text-align: center;
+}
+
+.newpost {
+    border-radius: 5px;
+}
+
+.submitpost {
+    text-align: center;
+    margin: 10px;
+}
+
+.like_button {
+    width: 20px;
+    height: 20px;
+}
+
+.footer_post {
+    display: flex;
+    justify-content: space-around;
+}
+
+.post_card {
+    height: 450px;
+    background-color: #d3d9df;
+    padding: 10px;
+    margin: 20px;
+}
+
+.post_card_id{
+    background-color: #d3d9df;
+    padding: 10px;
+    margin: 20px;
+}
+
+.textarea_post:valid {
+    border: 2px solid black;
+}
+
+
+.textarea_post:invalid {
+    border: 2px solid red;
+}
