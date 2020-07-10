@@ -34,7 +34,11 @@ class PostServices {
 
     public function getPosts(?User $user = null)
     {
-        $posts = Post::withCount('likes')->orderBy('likes_count', 'desc')->paginate(5);
+        $posts = Post::withCount('comments', 'likes')
+            ->orderBy('comments_count', 'desc')
+            ->orderBy('likes_count', 'desc')
+            ->paginate(5);
+
         foreach ($posts as &$post) {
             $count = 0;
             $iLiked = false;
